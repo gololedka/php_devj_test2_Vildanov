@@ -1,0 +1,3 @@
+SELECT users.id as user_id, users.login, users.password, users.object_id, objects.name, objects.status FROM users
+LEFT JOIN objects
+ON users.object_id = objects.id
